@@ -1,0 +1,14 @@
+$ ssh ubuntu@server_web_db -i nama_keypairs.pem   
+$ sudo mysql -u root -p
+
+mysql> CREATE USER 'devopscilsy'@'localhost' IDENTIFIED BY '1234567890';
+mysql> grant all privileges on *.* to 'devopscilsy'@'localhost';
+mysql> \q
+
+Masuk dalam mysql dengan user devopscilsy
+
+mysql> sudo mysql -u devopscilsy -p
+mysql> create database dbsosmed;
+mysql> show databases;
+mysql> \q
+
